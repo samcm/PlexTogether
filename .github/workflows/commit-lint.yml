@@ -13,4 +13,4 @@ jobs:
         continue-on-error: ${{ contains(github.event.pull_request.labels.*.name, 'dependencies') || github.actor == 'dependabot[bot]' }}
         uses: ahmadnassri/action-conventional-commit-lint@v1.3.3
         with:
-          token: ${{ github.token }}
+          github-token: ${{ github.token }}
